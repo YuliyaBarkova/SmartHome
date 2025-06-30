@@ -6,16 +6,16 @@ public class Radio {
 
     public void louder() {
         if (currentVolume != 100) {
-            currentVolume ++;
-        } else  {
+            currentVolume++;
+        } else {
             return;
         }
     }
 
     public void quiet() {
         if (currentVolume != 0) {
-            currentVolume --;
-        } else  {
+            currentVolume--;
+        } else {
             return;
         }
     }
@@ -23,7 +23,7 @@ public class Radio {
     public void next() {
         if (currentStation != 9) {
             currentStation++;
-        } else  {
+        } else {
             currentStation = 0;
         }
     }
@@ -43,7 +43,7 @@ public class Radio {
     public void setCurrentStation(int currentStation) {
         if (currentStation < 0)
             return;
-        if (currentStation >9)
+        if (currentStation > 9)
             return;
         this.currentStation = currentStation;
     }
@@ -55,7 +55,7 @@ public class Radio {
     public void setCurrentVolume(int currentVolume) {
         if (currentVolume < 0)
             return;
-        if (currentVolume >100)
+        if (currentVolume > 100)
             return;
         this.currentVolume = currentVolume;
     }

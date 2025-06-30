@@ -336,7 +336,7 @@ class RadioTest {
     }
 
     @Test
-    public void testLouderAccept () {
+    public void testLouderAccept() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(50);
@@ -349,7 +349,7 @@ class RadioTest {
     }
 
     @Test
-    public void testLouderLowerLimit () {
+    public void testLouderLowerLimit() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(0);
@@ -362,7 +362,7 @@ class RadioTest {
     }
 
     @Test
-    public void testLouderLowerLimit2 () {
+    public void testLouderLowerLimit2() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(1);
@@ -375,7 +375,7 @@ class RadioTest {
     }
 
     @Test
-    public void testLouderUpperLimit () {
+    public void testLouderUpperLimit() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(99);
@@ -388,7 +388,7 @@ class RadioTest {
     }
 
     @Test
-    public void testLouderUpperLimit2 () {
+    public void testLouderUpperLimit2() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(100);
@@ -401,7 +401,7 @@ class RadioTest {
     }
 
     @Test
-    public void testQuietAccept () {
+    public void testQuietAccept() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(50);
@@ -414,7 +414,7 @@ class RadioTest {
     }
 
     @Test
-    public void testQuietLowerLimit () {
+    public void testQuietLowerLimit() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(0);
@@ -427,7 +427,7 @@ class RadioTest {
     }
 
     @Test
-    public void testQuietLowerLimit2 () {
+    public void testQuietLowerLimit2() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(1);
@@ -440,7 +440,7 @@ class RadioTest {
     }
 
     @Test
-    public void testQuietUpperLimit () {
+    public void testQuietUpperLimit() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(99);
@@ -453,7 +453,7 @@ class RadioTest {
     }
 
     @Test
-    public void testQuietUpperLimit2 () {
+    public void testQuietUpperLimit2() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(100);
@@ -464,9 +464,6 @@ class RadioTest {
         int actual = radio.getCurrentVolume();
         Assertions.assertEquals(expected, actual);
     }
-
-
-
 
 
 }
