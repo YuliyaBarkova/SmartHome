@@ -8,6 +8,17 @@ public class Radio {
     private int maxVolume = 100;
     private int minVolume = 0;
 
+    public Radio() {
+        this.maxStation = maxStation;
+        this.minStation = minStation;
+        this.maxVolume = maxVolume;
+        this.minVolume = minVolume;
+    }
+
+    public Radio(int stationCount) {
+        this.maxStation = stationCount - 1;
+    }
+
     public int getMaxStation() {
         return maxStation;
     }
@@ -22,17 +33,6 @@ public class Radio {
 
     public int getMinVolume() {
         return minVolume;
-    }
-
-    public Radio(int maxStation, int minStation, int maxVolume, int minVolume) {
-        this.maxStation = maxStation;
-        this.minStation = minStation;
-        this.maxVolume = maxVolume;
-        this.minVolume = minVolume;
-    }
-
-    public Radio(int stationCount) {
-        this.maxStation = stationCount - 1;
     }
 
     public void louder() {

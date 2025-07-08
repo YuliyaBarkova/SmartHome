@@ -8,10 +8,9 @@ class RadioTest {
     Radio radio = new Radio(10);
 
 
-
     @Test
-    public void testRadioInit () {
-        Radio radio = new Radio (9,0,100,0);
+    public void testRadioInit() {
+        Radio radio = new Radio();
 
         Assertions.assertEquals(9, radio.getMaxStation());
         Assertions.assertEquals(0, radio.getMinStation());
@@ -73,7 +72,7 @@ class RadioTest {
     @Test
     public void testStationLowerLimit3() {
 
-       radio.setCurrentStation(1);
+        radio.setCurrentStation(1);
 
         int expected = 1;
         int actual = radio.getCurrentStation();
@@ -103,7 +102,7 @@ class RadioTest {
     @Test
     public void testStationUpperLimit3() {
 
-       radio.setCurrentStation(radio.getMaxStation()+1);
+        radio.setCurrentStation(radio.getMaxStation() + 1);
 
         int expected = radio.getMinStation();
         int actual = radio.getCurrentStation();
